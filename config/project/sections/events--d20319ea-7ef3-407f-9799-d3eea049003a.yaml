@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: events
+name: Events
+propagationMethod: all
+siteSettings:
+  b1203dd8-886c-4fda-967b-fd30fc1fb44d: # tsm vicenza
+    enabledByDefault: true
+    hasUrls: true
+    template: eventcard/_entry
+    uriFormat: 'eventcard/{slug}'
+type: channel

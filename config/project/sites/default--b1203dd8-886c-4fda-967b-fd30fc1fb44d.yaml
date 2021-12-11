@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: it
+name: 'tsm vicenza'
+primary: true
+siteGroup: 7ef69d80-9a96-42c8-b178-c21f4a8935ac # tsm vicenza
+sortOrder: 1

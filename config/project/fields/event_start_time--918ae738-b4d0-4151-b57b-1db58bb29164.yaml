@@ -1,0 +1,14 @@
+columnSuffix: fypqjsjn
+contentColumnType: time
+fieldGroup: 1f179349-4990-4beb-95fd-ca4178d4a5dd # Event
+handle: event_start_time
+instructions: ''
+name: 'Ora Inizio'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Time

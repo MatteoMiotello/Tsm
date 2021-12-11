@@ -1,0 +1,30 @@
+{% extends '_template.twig' %}
+{% block content %}
+    <div class="intro-home">
+        <div class="content-intro-home">
+            <h1 class="titolo-intro">Teatro San Marco</h1>
+            <h2> Un teatro storico per arte, musica, eventi e molto altro... </h2>
+            <div class="home-buttons">
+                <a class="big-button" href="https://ticket.cinebot.it/s.marco/"> Biglietteria </a>
+                <a class="bar-button" href="/pagine/contatti.html#contatti">Contatti</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-home">
+        <ul id="container-home">
+            {% set query = craft.entries()
+                .section( 'Events' )
+                .limit( 10 ) %}
+
+            {% set entries = query.all() %}
+
+            {% for entry in entries %}
+                {% include "./components/event_card.twig" with{
+                    'event_title': entry.event_title,
+                    'event_cover': entry.event_cover,
+                    'event_date': entry.event_date|date('d/m/Y')
+                }%}
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

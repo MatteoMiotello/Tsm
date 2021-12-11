@@ -1,0 +1,10 @@
+<li class="container-copertina">
+    <img class="copertine-home" src="{{ event_cover.first().url }}" alt="Copertina evento">
+    <div class="banda-copertine-home">
+        <div class="text-home">
+            <p class="titolo-home"> {{ event_title }} </p>
+            <p class="data-home"><i class="far fa-calendar"></i>{{ event_date }}</p>
+        </div>
+        <a class= "pulsante-dettagli-home" href ="/php/singleEvent.php?id=$id">Visualizza dettagli</a>
+    </div>
+</li>

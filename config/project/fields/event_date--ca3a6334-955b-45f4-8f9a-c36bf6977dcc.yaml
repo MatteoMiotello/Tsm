@@ -1,0 +1,17 @@
+columnSuffix: mdzpeutu
+contentColumnType: datetime
+fieldGroup: 1f179349-4990-4beb-95fd-ca4178d4a5dd # Event
+handle: event_date
+instructions: ''
+name: Data
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

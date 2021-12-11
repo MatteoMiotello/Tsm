@@ -1,0 +1,35 @@
+dateModified: 1638964240
+email:
+  fromEmail: metmiot98@gmail.com
+  fromName: 'tsm vicenza'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1f179349-4990-4beb-95fd-ca4178d4a5dd: Event # Event
+    4e909cbc-ce72-4e1a-a543-bba4574d72d6: Home # Home
+    7ef69d80-9a96-42c8-b178-c21f4a8935ac: 'tsm vicenza' # tsm vicenza
+    22abdb3e-205b-4e7d-be34-caa9df6a9524: Common # Common
+    30aba6c0-97f1-4837-b36b-560b2afa1072: Titolo # Titolo
+    78d0702c-2b7b-493d-94d6-1eba8afc7956: Sottotitolo # Sottotitolo
+    86a3d72d-0533-48e6-bc34-a2336f0e232c: Home # Home
+    171ff2fc-54e4-4060-9ace-4b158680d28c: Uploads # Uploads
+    918ae738-b4d0-4151-b57b-1db58bb29164: 'Ora Inizio' # Ora Inizio
+    925d66d5-d9ed-4f93-b885-66308433e83d: 'Ora Fine' # Ora Fine
+    9780f60b-2e88-4188-8010-cb0cb8bfa51c: Copertina # Copertina
+    a0c9b4db-14fe-4be3-aab4-0c7c3c402087: Evento # Evento
+    b1203dd8-886c-4fda-967b-fd30fc1fb44d: 'tsm vicenza' # tsm vicenza
+    ca3a6334-955b-45f4-8f9a-c36bf6977dcc: Data # Data
+    d20319ea-7ef3-407f-9799-d3eea049003a: Events # Events
+    fe3b3a01-8d5c-48f6-a1b2-f8acd053613f: Descrizione # Descrizione
+system:
+  edition: solo
+  live: true
+  name: 'tsm vicenza'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
