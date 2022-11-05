@@ -65,6 +65,9 @@ Homestead.json
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+.idea
+
+.editorconfig
 
 # Gradle
 .idea/**/gradle.xml
