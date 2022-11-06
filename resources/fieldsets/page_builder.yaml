@@ -22,6 +22,12 @@ fields:
           fields:
             -
               import: form
+        home:
+          display: home
+          instructions: null
+          fields:
+            -
+              import: home
         link_blocks:
           display: 'Link blocks'
           instructions: 'Show link blocks.'

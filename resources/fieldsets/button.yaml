@@ -22,7 +22,6 @@ fields:
       width: 33
       listable: hidden
       instructions_position: above
-      read_only: false
   -
     handle: link_type
     field:
@@ -165,3 +164,14 @@ fields:
       replicator_preview: false
       if:
         show_controls: 'equals true'
+  -
+    handle: ghost
+    field:
+      default: false
+      display: Ghost
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

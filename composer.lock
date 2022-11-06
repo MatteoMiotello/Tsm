@@ -4,8 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90587a3e6414cfe42853a9164f43ec30",
+    "content-hash": "41ea23e902c1882f746ea66ef6072ad3",
     "packages": [
+        {
+            "name": "aerni/font-awesome",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aerni/statamic-font-awesome.git",
+                "reference": "a1cea39aa3306010eca4a11a589993407c4652cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aerni/statamic-font-awesome/zipball/a1cea39aa3306010eca4a11a589993407c4652cc",
+                "reference": "a1cea39aa3306010eca4a11a589993407c4652cc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "statamic/cms": "~3.2.22 || 3.3.*"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Font Awesome",
+                    "description": "A Statamic addon to easily add Font Awesome icons."
+                },
+                "laravel": {
+                    "providers": [
+                        "Aerni\\FontAwesome\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aerni\\FontAwesome\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Aerni",
+                    "email": "hello@michaelaerni.ch",
+                    "homepage": "https://michaelaerni.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Statamic addon to easily add Font Awesome icons.",
+            "homepage": "https://github.com/aerni/statamic-font-awesome",
+            "keywords": [
+                "font-awesome",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/aerni/statamic-font-awesome/issues",
+                "source": "https://github.com/aerni/statamic-font-awesome/tree/v1.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/aerni",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-11T01:47:56+00:00"
+        },
         {
             "name": "ajthinking/archetype",
             "version": "v1.1.5",
@@ -10817,5 +10882,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }

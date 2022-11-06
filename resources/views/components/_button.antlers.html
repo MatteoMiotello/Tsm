@@ -13,7 +13,13 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-            font-bold underline decoration-2 focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+        text-sm
+
+        {{ if ghost }}
+            inline-flex items-center py-3 px-4 rounded leading-none no-underline select-none whitespace-nowrap motion-safe:transition text-white border border-white bg-transparent hover:bg-indigo-50
+            {{else}}
+            underline decoration-2 focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            {{ /if }}
             {{ if button_type === 'inline' }}
                 underline motion-safe:transition
                 {{ inverted

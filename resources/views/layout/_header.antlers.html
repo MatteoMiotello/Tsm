@@ -4,9 +4,10 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="w-full bg-primary ">
-    <div class="flex justify-between items-center">
-        {{ partial:components/logo width="130" }}
+<header class="w-full m-0">
+    <div class="flex justify-between items-center bg-primary text-white">
+        {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
+        {{ partial:components/logo width="110" }}
         {{ partial:navigation/main }}
     </div>
 </header>

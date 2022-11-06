@@ -1,0 +1,21 @@
+<div
+    style="
+    {{ cover }}
+        background-image: radial-gradient(circle at left, #1f1f1f, rgba(0, 0, 0, .699), rgba(255, 255, 255, .01) 80%), url({{url}});;
+    {{ /cover }}
+    background-size: cover;
+    background-position: center;"
+    class="w-screen h-80 flex flex-col">
+
+    <div class="my-auto">
+        <h1 class="uppercase text-white my-2 ml-4 text-3xl font-normal">
+            {{header_title}}
+        </h1>
+        <h2 class="text-white ml-4 font-normal">
+            {{header_subtitle}}
+        </h2>
+        <div class="ml-4 mt-4">
+        {{ partial:components/buttons }}
+        </div>
+    </div>
+</div>

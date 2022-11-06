@@ -1,6 +1,18 @@
 /* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
 
 @layer base {
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/public/fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''),
+        url('/public/fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/public/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/public/fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('/public/fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/public/fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+    }
 
 }
 

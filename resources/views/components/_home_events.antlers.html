@@ -1,0 +1,13 @@
+<ul>
+{{ collection from="events" }}
+   <div class="w-80">
+       {{ partial:components/picture :image="thumbnail" cover="true" sizes="20rem" lazy="true" aspect_ratio="1/1.42"}}
+    <div>
+    <div class="flex flex-col">
+    {{ title  }}
+    {{ date format_localized="%d %B %Y" }}
+    </div>
+    </div>
+   </div>
+{{ /collection }}
+</ul>

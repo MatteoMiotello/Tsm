@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 0327fbf3-76c5-490a-938a-010129db3e82
-updated_at: 1667647876
+updated_at: 1667752307
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -13,4 +13,66 @@ seo_title: 'Teatro San Marco'
 seo_description: 'Teatro san marco a vicenza, un luogo storico in cui poter segure rappresentazioni teatrali, concerti, oppure meeting e conferenze'
 og_title: 'Teatro san marco'
 og_description: 'Teatro san marco a vicenza, un luogo storico in cui poter segure rappresentazioni teatrali, concerti, oppure meeting e conferenze'
+cover:
+  - copertinahome.webp
+header_title: 'Teatro San Marco'
+header_subtitle: |-
+  Teatro storico per arte musica, eventi; 
+
+  Dal 1934 sempre qui per voi.
+buttons:
+  -
+    id: la58jnox
+    label: Biglietteria
+    link_type: url
+    target_blank: false
+    url: 'https://ticket.cinebot.it/s.marco/'
+    button_type: button
+    attr_title: 'Vai alla biglietteria'
+    attr_aria: 'ticket cinebot'
+    ghost: false
+  -
+    id: la58miom
+    label: Contatti
+    link_type: entry
+    target_blank: false
+    entry: c9fffe15-b390-48c1-92c9-a2be08aea67f
+    button_type: button
+    attr_title: 'Vai alla pagina contatti'
+    attr_aria: 'Vai ai contatti'
+    ghost: true
+page_builder:
+  -
+    id: la59a7zl
+    header_title: 'Teatro San Marco'
+    header_subtitle: |-
+      Teatro storico per arte musica, eventi;
+
+
+      Dal 1934 sempre qui per voi.
+    cover:
+      - copertinahome.webp
+    buttons:
+      -
+        id: la59arhy
+        label: Biglietteria
+        link_type: url
+        target_blank: false
+        url: 'https://ticket.cinebot.it/s.marco/'
+        button_type: button
+        attr_title: 'Vai alla biglietteria'
+        attr_aria: ticket.cinebot.it
+        ghost: false
+      -
+        id: la59bnb0
+        label: Contatti
+        link_type: entry
+        target_blank: false
+        entry: c9fffe15-b390-48c1-92c9-a2be08aea67f
+        button_type: button
+        attr_title: 'Vai ai contatti'
+        attr_aria: 'Vai ai contatti'
+        ghost: true
+    type: home
+    enabled: true
 ---

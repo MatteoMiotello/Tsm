@@ -49,6 +49,7 @@ module.exports = {
         // Use a custom sans serif font for this site by changing 'Gaultier' to the
         // font name you want and uncommenting the following line.
         // 'Gaultier',
+          'Montserrat',
         ...defaultTheme.fontFamily.sans,
       ],
       serif: [
@@ -63,7 +64,7 @@ module.exports = {
       // hairline: 100,
       // thin: 200,
       // light: 300,
-      normal: 400,
+      normal: 300,
       // medium: 500,
       // semibold: 600,
       bold: 700,

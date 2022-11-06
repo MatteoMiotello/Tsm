@@ -1,0 +1,141 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: subtitle
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Sottotitolo
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: description
+        field:
+          type: markdown
+          localizable: true
+          display: Descrizione
+          instructions_position: above
+          listable: hidden
+          visibility: visible
+          always_save: false
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+      -
+        handle: thumbnail
+        field:
+          mode: list
+          container: thumbnails
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Copertina
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: dates
+        field:
+          fields:
+            -
+              handle: data
+              field:
+                mode: single
+                time_enabled: false
+                time_seconds_enabled: false
+                full_width: false
+                inline: false
+                columns: 1
+                rows: 1
+                display: Data
+                type: date
+                icon: date
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+                width: 50
+            -
+              handle: time
+              field:
+                seconds_enabled: false
+                display: 'Ora inizio'
+                type: time
+                icon: time
+                width: 50
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: duration
+              field:
+                display: Durata
+                type: integer
+                icon: integer
+                instructions: 'durata in minuti'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+          mode: table
+          reorderable: true
+          display: Date
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: ticket_url
+        field:
+          display: 'Url biglietto'
+          type: link
+          icon: link
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - url
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+title: Evento

@@ -14,6 +14,21 @@ sections:
           display: Title
           validate:
             - required
+      -
+        handle: template_content
+        field:
+          hide_partials: true
+          blueprint: false
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: page_builder
+        field: page_builder.page_builder
   seo:
     display: SEO
     fields:
