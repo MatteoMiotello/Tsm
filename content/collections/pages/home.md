@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 0327fbf3-76c5-490a-938a-010129db3e82
-updated_at: 1667752307
+updated_at: 1668333478
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -46,12 +46,11 @@ page_builder:
     id: la59a7zl
     header_title: 'Teatro San Marco'
     header_subtitle: |-
-      Teatro storico per arte musica, eventi;
+      Teatro storico per arte musica, eventi
 
 
       Dal 1934 sempre qui per voi.
-    cover:
-      - copertinahome.webp
+    cover: copertina_square.webp
     buttons:
       -
         id: la59arhy
@@ -63,16 +62,23 @@ page_builder:
         attr_title: 'Vai alla biglietteria'
         attr_aria: ticket.cinebot.it
         ghost: false
-      -
-        id: la59bnb0
-        label: Contatti
-        link_type: entry
-        target_blank: false
-        entry: c9fffe15-b390-48c1-92c9-a2be08aea67f
-        button_type: button
-        attr_title: 'Vai ai contatti'
-        attr_aria: 'Vai ai contatti'
-        ghost: true
     type: home
     enabled: true
+    wallpaper: wallpaper-light.svg
+  -
+    id: la9zmbn6
+    title: 'Il teatro'
+    description: "Un teatro storico situato nel centro di Vicenza, location idonea per poter svolgere meeting, conferenze e riunioni, seguiti dal nostro personale e supportati dall'assistenza tecnica."
+    youtube_url: 'https://youtu.be/5f5iStvNiHk'
+    size: xl
+    type: video_description
+    enabled: true
+    wallpaper: wallpaper-dark.svg
+  -
+    id: laf6gbz2
+    type: events_preview
+    enabled: true
+    wallpaper: frame-4.png
+og_image: logo.jpg
+twitter_image: logo.jpg
 ---

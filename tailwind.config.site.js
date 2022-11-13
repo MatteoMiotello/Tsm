@@ -16,6 +16,7 @@ module.exports = {
     // Here we define the default colors available. If you want to include
     // all default Tailwind colors you should extend the colors instead.
     colors: {
+        secondary: '#D9D9D9',
       black:   '#000',
       white:  '#fff',
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
@@ -55,7 +56,7 @@ module.exports = {
       serif: [
         // Use a custom serif font for this site by changing 'Lavigne' to the
         // font name you want and uncommenting the following line.
-        // 'Lavigne',
+        'Judson',
         ...defaultTheme.fontFamily.serif,
       ],
     },

@@ -58,27 +58,26 @@ sections:
           visibility: visible
           always_save: false
       -
-        handle: dates
+        handle: event_date
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Data
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: event_times
         field:
           fields:
-            -
-              handle: data
-              field:
-                mode: single
-                time_enabled: false
-                time_seconds_enabled: false
-                full_width: false
-                inline: false
-                columns: 1
-                rows: 1
-                display: Data
-                type: date
-                icon: date
-                listable: hidden
-                instructions_position: above
-                visibility: visible
-                always_save: false
-                width: 50
             -
               handle: time
               field:
@@ -104,7 +103,7 @@ sections:
                 always_save: false
           mode: table
           reorderable: true
-          display: Date
+          display: Orari
           type: grid
           icon: grid
           listable: hidden

@@ -1,0 +1,29 @@
+title: 'Video Description'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Titolo
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Descrizione
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    import: video
+  -
+    import: wallpaper

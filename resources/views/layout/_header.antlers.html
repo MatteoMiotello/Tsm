@@ -4,11 +4,13 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="w-full m-0">
-    <div class="flex justify-between items-center bg-primary text-white">
+<header class="w-full m-0 absolute z-50">
+    <div class="flex justify-center items-center">
         {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
-        {{ partial:components/logo width="110" }}
+            {{ partial:components/logo width="110" }}
+        <div class="m-auto">
         {{ partial:navigation/main }}
+</div>
     </div>
 </header>
 <!-- End: /layout/_header.antlers.html -->

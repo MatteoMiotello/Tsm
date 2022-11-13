@@ -5,10 +5,20 @@
 
 <!-- /components/_logo.antlers.html -->
 <a
-	class="focus:outline-none focus-visible:ring-2 ring-primary mx-3 my-2"
+	class="focus:outline-none focus-visible:ring-2 ring-primary px-3 py-2 logo-bg z-10"
 	aria-label="Logo {{ config:app:name }}"
 	href="{{ site:url }}"
 >
-    <img src="/visuals/logo_bianco.webp" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
+
+    <img src="/visuals/logo.webp" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
 </a>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="absolute z-[-50]">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
 <!-- End: /components/_logo.antlers.html -->

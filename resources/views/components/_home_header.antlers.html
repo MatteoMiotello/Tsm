@@ -1,21 +1,19 @@
-<div
-    style="
-    {{ cover }}
-        background-image: radial-gradient(circle at left, #1f1f1f, rgba(0, 0, 0, .699), rgba(255, 255, 255, .01) 80%), url({{url}});;
-    {{ /cover }}
-    background-size: cover;
-    background-position: center;"
-    class="w-screen h-80 flex flex-col">
-
-    <div class="my-auto">
-        <h1 class="uppercase text-white my-2 ml-4 text-3xl font-normal">
+<div class="w-full h-screen flex flex-col my-auto z-0">
+    {{ partial:components/picture :image="wallpaper" sizes="(min-width=100%)" class="absolute h-screen w-full top:0 left:0 bg-secondary z-[-1]"}}
+    <div class="flex flex-col md:flex-row my-auto align-baseline justify-between w-full px-20">
+    <div class="mt-auto w-full">
+        <h1 class="uppercase my-4 text-6xl font-normal">
             {{header_title}}
         </h1>
-        <h2 class="text-white ml-4 font-normal">
+        <h2 class="ml-4 my-4 font-sans">
             {{header_subtitle}}
         </h2>
-        <div class="ml-4 mt-4">
+        <div class="ml-4 mt-6">
         {{ partial:components/buttons }}
         </div>
-    </div>
+        </div>
+        <div class="">
+        {{ partial:components/picture :image="cover" sizes="30rem" aspect_ratio="1/1" }}
+        </div>
+     </div>
 </div>

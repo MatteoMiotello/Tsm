@@ -1,0 +1,39 @@
+{{#
+	@name Events Preview
+	@desc The Events Preview page builder block.
+    @set page.page_builder.events_preview
+#}}
+
+<!-- /page_builder/_events_preview.antlers.html -->
+<section class="flex flex-col h-screen w-full my-auto">
+    {{ partial:components/picture :image="wallpaper" sizes="(min-width=100%)" class="absolute h-screen w-full top:0 left:0 z-[-1]"}}
+<div class="w-full px-20 my-auto">
+    {{partial:typography/h2 content="Ciao come stai"}}
+
+    {{ collection:events as="events" status:in="published" sort="event_date" }}
+        <div>
+        {{ events group_by="event_date|M Y"}}
+        {{ groups }}
+            {{ group }}
+        {{ /groups }}
+        {{ /events }}
+        </div>
+
+        <div class="flex font-sans text-sm">
+        {{ events sort="event_date"}}
+            <div class="mr-3 my-auto w-40">
+                <i class="fa-regular fa-calendar"></i><span class="ml-2">{{event_date format="d M Y"}}</span>
+                {{event_times}}
+                    <br>
+                    <i class="fa-regular fa-clock"></i><span class="ml-2">{{time}}</span> <span class="ml-1">{{duration}} min</span>
+                {{ /event_times }}
+                <h3 class="text-primary font-bold mt-3 text-lg">{{ title }}</h3>
+                <h4>{{ subtitle }}</h4>
+            </div>
+            {{ partial:components/picture :image="thumbnail" sizes="10rem" aspect_ratio="1/1.42" async="true" class="w-40"}}
+        {{ /events }}
+        </div>
+    {{ /collection:events }}
+    </div>
+</section>
+<!-- End: /page_builder/_events_preview.antlers.html -->

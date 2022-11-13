@@ -36,6 +36,11 @@ fields:
           fields:
             -
               import: buttons
+        events_preview:
+          display: 'Events Preview'
+          fields:
+            -
+              import: events_preview
         figure:
           display: Figure
           fields:

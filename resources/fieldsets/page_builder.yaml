@@ -16,6 +16,12 @@ fields:
           fields:
             -
               import: article
+        events_preview:
+          display: 'Events Preview'
+          instructions: null
+          fields:
+            -
+              import: events_preview
         form:
           display: Form
           instructions: 'Show a form.'
@@ -34,3 +40,9 @@ fields:
           fields:
             -
               import: link_blocks
+        video_description:
+          display: 'Video Description'
+          instructions: null
+          fields:
+            -
+              import: video_description

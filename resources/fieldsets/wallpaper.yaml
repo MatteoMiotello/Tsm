@@ -1,0 +1,18 @@
+title: Wallpaper
+fields:
+  -
+    handle: wallpaper
+    field:
+      mode: list
+      container: wallpapers
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: Sfondo
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      max_files: 1

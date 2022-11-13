@@ -2,3 +2,7 @@ name: Matteo
 super: true
 id: 0327fbf3-76c5-490a-938a-010129db3e82
 password_hash: $2y$10$XyfkvBpq4pv7QHVf4vokieXsn6FH85fpyc6uE803xC2hrLScuu6dm
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

@@ -1,0 +1,21 @@
+{{#
+	@name Video Description
+	@desc The Video Description page builder block.
+    @set page.page_builder.video_description
+#}}
+
+<!-- /page_builder/_video_description.antlers.html -->
+<section class="h-screen w-full flex flex-col">
+    {{ partial:components/picture :image="wallpaper" sizes="(min-width=100%)" class="absolute h-screen w-full top:0 left:0 z-[-1]"}}
+<div class="flex flex-col md:flex-row justify-around md:px-20 my-auto">
+<div class="flex-1">
+    {{partial:components/video }}
+</div>
+<div class="flex-1 pl-20 my-auto">
+    {{ partial:typography/h2 content="{{title}}" class="md:text-right" }}
+
+    {{ partial:typography/p content="{description}" class="md:text-right" }}
+</div>
+</div>
+</section>
+<!-- End: /page_builder/_video_description.antlers.html -->

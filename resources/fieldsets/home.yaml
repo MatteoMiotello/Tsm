@@ -1,4 +1,4 @@
-title: home
+title: Home
 fields:
   -
     handle: header_title
@@ -43,5 +43,8 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
+      max_files: 1
   -
     import: buttons
+  -
+    import: wallpaper
