@@ -3,13 +3,20 @@
 	@desc The Events Preview page builder block.
     @set page.page_builder.events_preview
 #}}
-
+<script type="module" src="js/events-preview.js"></script>
 <!-- /page_builder/_events_preview.antlers.html -->
 <section class="flex flex-col h-screen w-full my-auto">
     {{ partial:components/picture :image="wallpaper" sizes="(min-width=100%)" class="absolute h-screen w-full top:0 left:0 z-[-1]"}}
-<div class="w-full px-20 my-auto">
     {{partial:typography/h2 content="Ciao come stai"}}
 
+<div id="app">
+<EventsPreview></EventsPreview>
+</div>
+<div class="flex justify-between px-20 my-auto">
+    <button>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+    </button>
+    <div  class="">
     {{ collection:events as="events" status:in="published" sort="event_date" }}
         <div>
         {{ events group_by="event_date|M Y"}}
@@ -35,5 +42,9 @@
         </div>
     {{ /collection:events }}
     </div>
+    <button>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+    </button>
+</div>
 </section>
 <!-- End: /page_builder/_events_preview.antlers.html -->
