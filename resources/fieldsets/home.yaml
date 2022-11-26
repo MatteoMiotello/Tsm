@@ -46,5 +46,3 @@ fields:
       max_files: 1
   -
     import: buttons
-  -
-    import: wallpaper

@@ -15,9 +15,9 @@ sections:
           restrict: false
           automatic_line_breaks: true
           automatic_links: false
-          escape_markup: false
+          escape_markup: true
           smartypants: false
-          antlers: false
+          antlers: true
           display: Sottotitolo
           type: markdown
           icon: markdown
@@ -38,7 +38,7 @@ sections:
           restrict: false
           automatic_line_breaks: true
           automatic_links: false
-          escape_markup: false
+          escape_markup: true
           smartypants: false
           antlers: false
       -
@@ -53,23 +53,6 @@ sections:
           display: Copertina
           type: assets
           icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: event_date
-        field:
-          mode: single
-          time_enabled: false
-          time_seconds_enabled: false
-          full_width: false
-          inline: false
-          columns: 1
-          rows: 1
-          display: Data
-          type: date
-          icon: date
           listable: hidden
           instructions_position: above
           visibility: visible

@@ -48,6 +48,32 @@
     }
 }
 
+@layer page_builder {
+    .bg-line-light {
+        background-image: url("/resources/images/line-light.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .bg-line-dark {
+        background-image: url("/resources/images/line-dark.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 @layer utilities {
 
 }

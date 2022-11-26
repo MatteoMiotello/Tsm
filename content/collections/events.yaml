@@ -3,11 +3,13 @@ template: default
 layout: layout
 revisions: false
 date: true
-sort_dir: desc
+sort_dir: asc
 date_behavior:
-  past: public
-  future: private
+  past: unlisted
+  future: public
 preview_targets:
   -
     label: Entry
     url: '{permalink}'
+structure:
+  root: false

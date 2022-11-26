@@ -25,5 +25,3 @@ fields:
       always_save: false
   -
     import: video
-  -
-    import: wallpaper

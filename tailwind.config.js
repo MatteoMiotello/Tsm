@@ -22,7 +22,7 @@ module.exports = {
   // Configure Purge CSS.
   content: [
     './resources/views/**/*.html',
-    './resources/js/**/*.js',
+    './resources/js/**/*.{vue,js}',
   ],
   safelist: []
 }
