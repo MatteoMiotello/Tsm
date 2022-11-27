@@ -18,11 +18,13 @@
     <body class="min-h-screen selection:text-white font-serif ">
         {{ partial:snippets/noscript }}
         {{ partial:navigation/skip_to_content }}
-        {{ partial:components/toolbar }}
+{{#         {{ partial:components/toolbar }} #}}
         {{ yield:seo_body }}
 
         {{ partial:layout/header }}
+
         {{ template_content }}
+
         {{ partial:layout/footer }}
     </body>
 </html>

@@ -15,7 +15,7 @@ sections:
           validate:
             - required
       -
-        handle: template_content
+        handle: template
         field:
           hide_partials: true
           blueprint: false

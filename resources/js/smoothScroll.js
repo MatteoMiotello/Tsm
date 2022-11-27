@@ -34,12 +34,12 @@ function findNearest(current, offsets) {
         }
 
         if (direction === 'down') {
-            if (Math.abs(currentDifference) - 300 < difference) {
+            if (Math.abs(currentDifference) - 200 < difference) {
                 difference = currentDifference;
                 offset = currentOffset;
             }
         } else {
-            if (Math.abs(currentDifference) + 300 < difference) {
+            if (Math.abs(currentDifference) + 200 < difference) {
                 difference = currentDifference;
                 offset = currentOffset;
             }

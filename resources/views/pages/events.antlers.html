@@ -1,0 +1,29 @@
+<main class="bg-secondary bg-line-light">
+<div class="flex h-full flex-col">
+<h1 class="mt-32 text-4xl font-bold ml-20">{{title}}</h1>
+<ul class="font-sans">
+    {{ collection from="events" }}
+        <li class="flex border-t-2 border-t-neutral-100 mt-3 py-3 px-20">
+            <div class="flex flex-col mr-3 h-full">
+                <ul>
+                    {{ event_times }}
+                    <li><i class="fa-regular fa-clock"></i>{{time}}</li>
+                    {{ /event_times }}
+                </ul>
+                <span class="uppercase mt-auto">
+                    {{ date iso_format="d MMMM Y"}}
+                </span>
+            </div>
+            {{ partial:components/picture :image="thumbnail" sizes="5vw" class="w-32"}}
+            <div class="flex flex-col ml-3">
+                <h2 class="font-bold text-2xl">{{title}}</h2>
+                <p>{{subtitle}}</p>
+            </div>
+            <a class="ml-auto mt-auto text-primary text-sm">
+                Scopri di più
+            </a>
+        </li>
+    {{ /collection }}
+</ul>
+</div>
+</main>
