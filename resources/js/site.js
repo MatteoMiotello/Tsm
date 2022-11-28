@@ -8,6 +8,7 @@ import EventsPreview from "./EventsPreview.vue";
 import '../css/site.css';
 import moment from "moment/moment";
 import 'moment/locale/it'
+
 // Global get CSRF token function (used by forms).
 window.getToken = async () => {
     return await fetch('/!/DynamicToken/refresh')
@@ -32,9 +33,8 @@ let app = createApp({
     components: {
         EventsPreview,
     },
-    template: `<EventsPreview></EventsPreview>`
+    template: `<EventsPreview></EventsPreview>`,
 })
-
 app.mount('#vue-app');
 
 
