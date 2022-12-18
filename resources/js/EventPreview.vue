@@ -1,12 +1,15 @@
 <template>
     <Transition mode="out-in">
-    <div class="mr-3 my-auto w-40 font-sans" :key="event.id">
+    <div class="mr-3 my-auto w-48 font-sans" :key="event.id">
             <i class="fa-regular fa-calendar"></i><span class="ml-1">{{ eventDate }}</span>
             <br><span v-for="time in event.event_times"> <i class="fa-regular fa-clock"></i> {{
                 time.time
             }} {{ time.duration }} min</span>
             <h3 class="text-primary font-bold mt-3 text-lg">{{ event.title }}</h3>
             <h4 v-html="event.subtitle"></h4>
+            <a v-bind:href="'/events/' + event.id" class="mt-6 text-primary">
+                Scopri di più
+            </a>
     </div>
     </Transition>
 </template>

@@ -98,8 +98,8 @@ export default {
             <TransitionGroup name="list" class="flex flex-row items-baseline" tag="ul">
                     <li v-for="event in currentEvents.slice( 0, 3 )" :key="event">
                         <img v-bind:src="event.thumbnail.url" v-bind:alt="event.thumbnail.alt"
-                             class="aspect-[1/1.42] ml-2 backdrop-opacity-95 backdrop-invert bg-white/30 transition ease-in-out delay-500 "
-                             :class="currentEvent.id != event.id ? 'h-60 transition-all' : 'w-64 transition-all'">
+                             class="aspect-[1/1.42] ml-2 backdrop-opacity-95 backdrop-invert bg-white/30 transition ease-in-out delay-500 h-64"
+                             :class="currentEvent.id != event.id ? 'filter grayscale saturate-50 opacity-75 transition-all' : 'transition-all'">
                     </li>
             </TransitionGroup>
             <button @click="nextEvent">

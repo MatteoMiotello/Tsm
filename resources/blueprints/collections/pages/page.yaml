@@ -41,7 +41,7 @@ sections:
         handle: meta
         field:
           type: section
-          instructions: "This entry's meta data."
+          instructions: 'This entry''s meta data.'
           display: Meta
       -
         handle: slug
@@ -63,3 +63,23 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: logo_color
+        field:
+          options:
+            light: Chiaro
+            dark: Scuro
+          multiple: false
+          clearable: false
+          searchable: false
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: light
+          display: 'Colore logo'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 0327fbf3-76c5-490a-938a-010129db3e82
-updated_at: 1668939086
+updated_at: 1670087694
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -68,7 +68,7 @@ page_builder:
   -
     id: la9zmbn6
     title: 'Il teatro'
-    description: "Un teatro storico situato nel centro di Vicenza, location idonea per poter svolgere meeting, conferenze e riunioni, seguiti dal nostro personale e supportati dall'assistenza tecnica."
+    description: 'Un teatro storico situato nel centro di Vicenza, location idonea per poter svolgere meeting, conferenze e riunioni, seguiti dal nostro personale e supportati dall''assistenza tecnica.'
     youtube_url: 'https://youtu.be/5f5iStvNiHk'
     size: xl
     type: video_description
@@ -82,4 +82,5 @@ page_builder:
     events_preview_title: 'Prossimi Eventi'
 og_image: logo.jpg
 twitter_image: logo.jpg
+logo_color: light
 ---

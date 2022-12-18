@@ -120,4 +120,21 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - events
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: categorie_eventi
+        field:
+          type: terms
+          taxonomies:
+            - categorie_eventi
+          display: 'Categorie eventi'
+          mode: select
 title: Evento

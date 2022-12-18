@@ -1,0 +1,13 @@
+title: Collega
+sections:
+  main:
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+      -
+        handle: redirect
+        field:
+          type: link
+          required: true

@@ -4,8 +4,7 @@
 #}}
 
 <!-- /default.antlers.html -->
-{{ vite src="resources/js/smoothScroll.js" }}
-<main class="scrollbar-hide">
+<main class="scrollbar-hide snap-y snap-mandatory h-screen overflow-scroll">
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

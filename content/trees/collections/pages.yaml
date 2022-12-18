@@ -3,6 +3,9 @@ tree:
     entry: home
   -
     entry: 8e4893f1-a092-4e00-9649-fd697a1b3ede
+    children:
+      -
+        entry: c79f26a5-3dd3-4ea2-911b-102aa08edbc5
   -
     entry: c9fffe15-b390-48c1-92c9-a2be08aea67f
   -

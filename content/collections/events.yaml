@@ -1,7 +1,10 @@
 title: Eventi
-template: default
+template: pages/event
 layout: layout
+taxonomies:
+  - categorie_eventi
 revisions: false
+route: '/events/{id}'
 date: true
 sort_dir: asc
 date_behavior:

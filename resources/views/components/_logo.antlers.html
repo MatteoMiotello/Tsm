@@ -5,7 +5,13 @@
 
 <!-- /components/_logo.antlers.html -->
 <a
-	class="focus:outline-none focus-visible:ring-2 ring-primary px-3 py-2 logo-bg z-10"
+	class="focus:outline-none focus-visible:ring-2 ring-primary px-3 py-2 logo-bg z-10
+	{{if logo_color == 'dark'}}
+	    logo-bg-dark
+	{{else}}
+	    logo-bg-light
+	{{/if}}
+	"
 	aria-label="Logo {{ config:app:name }}"
 	href="{{ site:url }}"
 >

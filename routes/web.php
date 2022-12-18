@@ -49,6 +49,8 @@ Site::all()->each(function ($site) {
     ]);
 });
 
+//Route::statamic( '/event/{uuid}', 'pages/event' );
+
 // The Search route to display search results with `views/search.antlers.html`.
 // Route::statamic('/search', 'search', [
 //     'title' => 'Search results'

@@ -7,11 +7,7 @@
         font-weight: 400;
         src: url('/public/fonts/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
         src: local(''),
-        url('/public/fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/public/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/public/fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
-        url('/public/fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('/public/fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+        url('/public/fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/public/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('/public/fonts/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */ url('/public/fonts/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('/public/fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
     }
 
     @font-face {
@@ -20,18 +16,14 @@
         font-weight: 400;
         src: url('/public/fonts/judson-v18-latin-regular.eot'); /* IE9 Compat Modes */
         src: local(''),
-        url('/public/fonts/judson-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/public/fonts/judson-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/public/fonts/judson-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
-        url('/public/fonts/judson-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('/public/fonts/judson-v18-latin-regular.svg#Judson') format('svg'); /* Legacy iOS */
+        url('/public/fonts/judson-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/public/fonts/judson-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('/public/fonts/judson-v18-latin-regular.woff') format('woff'), /* Modern Browsers */ url('/public/fonts/judson-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('/public/fonts/judson-v18-latin-regular.svg#Judson') format('svg'); /* Legacy iOS */
     }
 }
 
 @layer components {
-    .logo-bg:before {
+    .logo-bg-dark::before,
+    .logo-bg-light:before {
         content: " ";
-        background-color: white;
         width: 11.5rem;
         height: 6.5rem;
         position: absolute;
@@ -43,7 +35,16 @@
         clip-path: polygon(50% 0%, 91% 0, 100% 19%, 100% 50%, 86% 82%, 57% 94%, 25% 95%, 0 86%, 0% 35%, 0 0);
     }
 
-    .logo-bg {
+    .logo-bg-light::before {
+        background-color: white;
+    }
+
+    .logo-bg-dark:before {
+        background-color: #D9D9D9;
+    }
+
+    .logo-bg-light,
+    .logo-bg-dark {
         filter: url('#goo');
     }
 }
@@ -70,8 +71,8 @@
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 @layer utilities {
